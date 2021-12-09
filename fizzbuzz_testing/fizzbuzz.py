@@ -1,4 +1,4 @@
-def main():
+def main():  # pragma: no cover
     for i in range(1, 101):
         print(fizzbuzz(i))
 
@@ -14,5 +14,5 @@ def fizzbuzz(i: int) -> str:
         return str(i)
 
 
-if __name__ == "__main__":
+if __name__ == "__main__":  # pragma: no cover
     main()

@@ -22,3 +22,9 @@ def test_fizzbuzz():
     input_list = [15, 30]
     for inpt in input_list:
         assert fizzbuzz(inpt) == "FizzBuzz"
+
+
+def test_normal_case():
+    input_list = [1, 2, 4]
+    for inpt in input_list:
+        assert fizzbuzz(inpt) == str(inpt)
