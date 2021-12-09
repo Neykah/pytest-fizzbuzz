@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "fizzbuzz_testing"
+version = "0.1.0"
+description = ""
+authors = ["Morgan Lefranc <mlefranc@ridge-i.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+pre-commit = "^2.16.0"
+black = "^21.12b0"
+flake8 = "^4.0.1"
+mypy = "^0.910"
+
+[tool.poetry.scripts]
+main = "fizzbuzz_testing.fizzbuzz:main"
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
